@@ -20,12 +20,12 @@ app.all('*', function (req, res, next) {
 
 const serverHttps = https.createServer(options, app);
 const serverHttp = http.createServer(app);
-app.use(express.static('public'))
-app.use(express.static('public/toutiao'))
+
 
 app.use(projecctsApi);
 app.use('/api',require('./api'));
-
+app.use(express.static('public'))
+app.use(express.static('public/toutiao'))
 // const port=443;
 const httpsPort=443;
 serverHttps.listen(httpsPort, () => {
@@ -33,7 +33,7 @@ serverHttps.listen(httpsPort, () => {
 })
 
 // push 之前 改为80
-const httpPort=801;
+const httpPort=80;
 serverHttp.listen(httpPort, () => {
     console.log('http项目管理器已经启动 port:' + httpPort);
 })
