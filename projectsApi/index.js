@@ -85,5 +85,8 @@ Router.get('/aircraft', (req, res) => {
 Router.get('/resume', (req, res) => {
     //简历
     res.redirect(`${cosPrefix}/resume/resume.pdf`)
+});Router.get('/xyBirthday', (req, res) => {
+    //birthday
+    res.redirect(`${cosPrefix}/zxyBirthday`)
 });
 module.exports = Router;
