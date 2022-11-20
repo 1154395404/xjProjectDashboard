@@ -15,7 +15,7 @@ Router.get('/getAnswer',(req,res)=>{
 })
 Router.post('/setAnswer',(req,res)=>{
 
-    // console.log('@',req.body)
+    console.log('xuexitong post',req.body);
     answer=req.body
     res.send({
         code:200,
