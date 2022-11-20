@@ -5,6 +5,6 @@ const Router = express.Router();
 Router.use('/getProjectList',require('./projectList'))
 //get 直接托管路由
 Router.get('/train/:from/:to/:date',require('./12306Query').get)
-
+Router.use('/xuexitong',require('./xuexitong'))
 
 module.exports=Router
