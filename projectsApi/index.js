@@ -7,7 +7,51 @@ Router.get('/', (req, res) => {
     console.log('/');
     // res.redirect('https://www.baidu.com/')
     // res.redirect(`${cosPrefix}/dashboard/`)
-    res.send(`<h1><a href="/dashboard">《一封情书》</a></h1>`)
+
+    const fragment=`<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>一封情书</title>
+    <style>
+    *{
+    padding: 0;
+    margin: 0;
+    }
+    body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .mark{
+    position:absolute;
+    bottom: 40px;
+    }
+    .title{
+    transition: 0.3s ease-in-out;
+      transform: scale(2);
+    }
+    .title a{
+    text-decoration: none;
+    }
+    .title:hover{
+    transform: scale(4);
+    }
+    
+    
+</style>
+</head>
+<body>
+<h1 class="title"><a href="/dashboard">《一封情书》</a></h1>
+<a class="mark" href="https://beian.miit.gov.cn/">冀ICP备2021020913号-1</a>
+</body>
+</html>`
+    res.send(fragment)
+
 });
 
 
