@@ -6,7 +6,8 @@ const cosPrefix = 'https://web-1301368439.cos-website.ap-beijing.myqcloud.com'
 Router.get('/', (req, res) => {
     console.log('/');
     // res.redirect('https://www.baidu.com/')
-    res.redirect(`${cosPrefix}/dashboard/`)
+    // res.redirect(`${cosPrefix}/dashboard/`)
+    res.send(`<h1><a href="/dashboard">《一封情书》</a></h1>`)
 });
 
 
