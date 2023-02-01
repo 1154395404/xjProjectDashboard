@@ -136,6 +136,6 @@ Router.get('/xyBirthday', (req, res) => {
 })
 ;Router.get('/j_chat', (req, res) => {
     //birthday
-    res.redirect(`http://127.0.0.1:3232`)
+    res.redirect(`http://www.xiaojunplay.cn:3232/`)
 });
 module.exports = Router;
