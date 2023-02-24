@@ -138,4 +138,12 @@ Router.get('/xyBirthday', (req, res) => {
     //birthday
     res.redirect(`http://www.xiaojunplay.cn:3232/`)
 });
+Router.get('/miumiu', (req, res) => {
+    //birthday
+    res.redirect(`http://www.xiaojunplay.cn:3434/`)
+});
+Router.get('/miumiu/admin', (req, res) => {
+    //birthday
+    res.redirect(`http://www.xiaojunplay.cn:3434/admin.html`)
+});
 module.exports = Router;
