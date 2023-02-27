@@ -146,4 +146,12 @@ Router.get('/miumiu/admin', (req, res) => {
     //birthday
     res.redirect(`http://www.xiaojunplay.cn:3434/admin.html`)
 });
+Router.get('/j_websocket', (req, res) => {
+    //birthday
+    res.redirect(`https://www.npmjs.com/package/j_websocket?activeTab=readme`)
+});
+Router.get('/hr', (req, res) => {
+    //birthday
+    res.redirect(`${cosPrefix}/hr`)
+})
 module.exports = Router;
