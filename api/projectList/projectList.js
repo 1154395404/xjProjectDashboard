@@ -112,7 +112,7 @@ const dunion = {
 }
 const quanqiu = {
     target: '/quanqiu',
-    cover: coverPrefix + 'quanqiu.jpeg',
+    cover: coverPrefix + 'quanqiu.gif',
     title: '全球商城-国外钻井机售卖平台',
     description: '一款大型国外钻井进售卖网站',
     frontStack: ['PC端：', 'JQuery', 'Mobile端：', 'Vue', 'Vant'],
@@ -122,7 +122,7 @@ const quanqiu = {
         end: '2021.08.03',
     },
     other: `技术难点：<p style="color: ${hardColor}">大量的UI页面编写（PC+Mobile共180个子页）、并且PC没有采用UI组件 需手写大量UI交互</p>
-   备注：<p style="color: ${remarkColor}">爱尚网络科技公司线上项目<br>公司个人独立开发</p>
+   备注：<p style="color: ${remarkColor}">爱尚网络科技公司线上项目<br>在公司个人独立开发</p>
          `
 }
 const hannong = {
@@ -182,7 +182,7 @@ const toutiao_m = {
 }
 const bomb = {
     target: '/bomb',
-    cover: coverPrefix + 'bomb.jpeg',
+    cover: coverPrefix + 'bomb.gif',
     title: '扫雷',
     description: '一款扫雷游戏',
     frontStack: ['Javascript'],
@@ -196,7 +196,7 @@ const bomb = {
 }
 const j_2048 = {
     target: '/2048',
-    cover: coverPrefix + '2048.jpeg',
+    cover: coverPrefix + '2048.gif',
     title: '2048游戏',
     description: '2048游戏',
     frontStack: ['Javascript'],
@@ -209,7 +209,7 @@ const j_2048 = {
 }
 const aircraft = {
     target: '/aircraft',
-    cover: coverPrefix + 'aircraft.jpeg',
+    cover: coverPrefix + 'aircraft.gif',
     title: '全民飞机大战游戏',
     description: '一款类似腾讯全民飞机大战游戏',
     frontStack: ['Javascript'],
@@ -330,8 +330,8 @@ module.exports = [
     j_swiper,
     j_chat,
     hr,
-    miumiu,
     i_remember,
+    miumiu,
     qiuqiu,
     i_chat,
     dunion,
@@ -341,6 +341,7 @@ module.exports = [
     qmusic,
     toutiao_m,
     bomb,
+    aircraft,
     j_2048,
-    aircraft
+
 ]
